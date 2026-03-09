@@ -15,12 +15,12 @@ public:
 		password = newPassword;
 		return "Password created successfully.";
 	}
-	string setusername(string newUsername) {
+	string setuserName(string newUsername) {
 		// Assuming we have a username variable to set
 		// username = newUsername;
 		return "Username created successfully.";
 	}
-	string getUsername() {
+	string getuserName() {
 		// Assuming we have a username variable to return
 		// return username;
 		return "Username retrieval is implemented.";
@@ -31,5 +31,12 @@ public:
 };
 int main()
 {
-    std::cout << "Hello World!\n";
+	string userName, password;
+	cout << "Enter username: ";
+	cin >> userName;
+	cout << "Enter password: ";
+	cin >> password;
+
+	cout << "Hello, " << userName << "! Welcome to the Library System." << endl;
+	return 0;
 }
