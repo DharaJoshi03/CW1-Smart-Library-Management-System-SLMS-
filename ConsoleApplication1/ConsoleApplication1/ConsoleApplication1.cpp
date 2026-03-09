@@ -35,11 +35,13 @@ int main()
 {
 	int userName, password;
 	string userName, password;
+	string onlineAccess;
 	cout << "Enter your username: ";
 	cin >> userName;
 	cout << "Enter your password: ";
 	cin >> password;
-
+	cout << "Online Access is granted " ;
+	cin >> onlineAccess;
 	cout << "Hello, " << userName << "! Welcome to the Library System." << endl;
 	return 0;
 }
