@@ -134,3 +134,27 @@ int main() {
 	cout << "Book Genre: " << books.book_genre << endl;
 	return 0;
 }
+class Members {
+private:
+	int member_age;
+public:
+	string member_name;
+	int member_id;
+	Members(string member_name, int member_age, int member_id) : member_name(member_name), member_age(member_age), member_id(member_id) {
+	}
+};
+int main() {
+	string member_name;
+	int member_age, member_id;
+	cout << "Enter Member Name: ";
+	cin >> member_name;
+	cout << "Enter Member Age: ";
+	cin >> member_age;
+	cout << "Enter Member ID: ";
+	cin >> member_id;
+	Members member(member_name, member_age, member_id);
+	cout << "Member Name: " << member.member_name << endl;
+	cout << "Member Age: " << member_age << endl;
+	cout << "Member ID: " << member_id << endl;
+	return 0;
+}
