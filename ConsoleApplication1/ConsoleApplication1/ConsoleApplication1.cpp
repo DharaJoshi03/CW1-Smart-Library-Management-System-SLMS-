@@ -107,7 +107,8 @@ public:
 	int number_of_books;
 	string book_genre;
 	string add_book;
-	Books(string book_title, string book_author, string remove_book, string book_pages, int number_of_books, string book_genre, string add_book) : book_title(book_title), book_author(book_author), remove_book(remove_book), book_pages(book_pages), number_of_books(number_of_books), book_genre(book_genre), add_book(add_book) {
+	string update_book;
+	Books(string book_title, string book_author, string remove_book, string book_pages, int number_of_books, string book_genre, string add_book, string update_book) : book_title(book_title), book_author(book_author), remove_book(remove_book), book_pages(book_pages), number_of_books(number_of_books), book_genre(book_genre), add_book(add_book), update_book(update_book) {
 	}
 };
 int main() {
