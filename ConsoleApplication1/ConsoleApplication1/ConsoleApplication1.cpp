@@ -5,7 +5,6 @@ using namespace std;
 class LibrarySystem{
 private:
 	string password;
-
 public:
 		LibrarySystem(string pass) : password(pass) {}
 	bool authenticate(string inputPassword) {
