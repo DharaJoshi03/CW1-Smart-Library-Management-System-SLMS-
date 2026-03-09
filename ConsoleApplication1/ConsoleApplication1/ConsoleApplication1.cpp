@@ -93,3 +93,41 @@ int main() {
 	cout << "Admin ID: " << admin_id << endl;
 	return 0;
 }
+class Books {
+public:
+	string book_title;
+	string book_author;
+	string remove_book;
+	string book_pages;
+	int number_of_books;
+	string book_genre;
+	string add_book;
+	Books(string book_title, string book_author, string remove_book, string book_pages, int number_of_books, string book_genre, string add_book) : book_title(book_title), book_author(book_author), remove_book(remove_book), book_pages(book_pages), number_of_books(number_of_books), book_genre(book_genre), add_book(add_book) {
+	}
+};
+int main() {
+	string book_title, book_author, remove_book, book_pages, book_genre, add_book;
+	int number_of_books;
+	cout << "Enter Book Title: ";
+	cin >> book_title;
+	cout << "Enter Book Author: ";
+	cin >> book_author;
+	cout << "Enter Remove Book: ";
+	cin >> remove_book;
+	cout << "Enter Book Pages: ";
+	cin >> book_pages;
+	cout << "Enter Number of Books: ";
+	cin >> number_of_books;
+	cout << "Enter Book Genre: ";
+	cin >> book_genre;
+	cout << "Enter Add Book: ";
+	cin >> add_book;
+	Books books(book_title, book_author, remove_book, book_pages, number_of_books, book_genre, add_book);
+	cout << "Book Title: " << books.book_title << endl;
+	cout << "Book Author: " << books.book_author << endl;
+	cout << "Remove Book: " << books.remove_book << endl;
+	cout << "Book Pages: " << books.book_pages << endl;
+	cout << "Number of Books: " << books.number_of_books << endl;
+	cout << "Book Genre: " << books.book_genre << endl;
+	return 0;
+}
