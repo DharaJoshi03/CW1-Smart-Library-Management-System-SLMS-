@@ -24,6 +24,9 @@ public:
 		// return username;
 		return "Username retrieval is implemented.";
 	}
+	string onlineAccess() {
+		return "Online access granted.";
+	}
 	string getPassword() {
 		return password;
 	}
