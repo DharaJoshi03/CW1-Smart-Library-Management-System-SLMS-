@@ -66,3 +66,30 @@ int main() {
 	cout << "User Authentication: " << user.getUserAuthentication() << endl;
 	return 0;
 }
+class Admin {
+private:
+	int admin_age;
+	string admin_password;
+public:
+	string admin_name;
+	int admin_id;
+	Admin(string admin_name, int admin_age, int admin_id, string admin_password) : admin_name(admin_name), admin_age(admin_age), admin_id(admin_id), admin_password(admin_password) {
+	}
+};
+int main() {
+	string admin_name, admin_password;
+	int admin_age, admin_id;
+	cout << "Enter Admin Name: ";
+	cin >> admin_name;
+	cout << "Enter Admin Age: ";
+	cin >> admin_age;
+	cout << "Enter Admin ID: ";
+	cin >> admin_id;
+	cout << "Enter Admin Password: ";
+	cin >> admin_password;
+	Admin admin(admin_name, admin_age, admin_id, admin_password);
+	cout << "Admin Name: " << admin.admin_name << endl;
+	cout << "Admin Age: " << admin_age << endl;
+	cout << "Admin ID: " << admin_id << endl;
+	return 0;
+}
