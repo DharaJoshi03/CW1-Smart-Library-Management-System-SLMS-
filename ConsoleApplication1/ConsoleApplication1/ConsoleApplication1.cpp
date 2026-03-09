@@ -32,9 +32,9 @@ public:
 int main()
 {
 	string userName, password;
-	cout << "Enter username: ";
+	cout << "Enter your username: ";
 	cin >> userName;
-	cout << "Enter password: ";
+	cout << "Enter your password: ";
 	cin >> password;
 
 	cout << "Hello, " << userName << "! Welcome to the Library System." << endl;
