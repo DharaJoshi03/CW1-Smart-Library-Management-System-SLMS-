@@ -102,39 +102,37 @@ class Books {
 public:
 	string book_title;
 	string book_author;
-	string remove_book;
-	string book_pages;
-	int number_of_books;
 	string book_genre;
+	string remove_book;
 	string add_book;
-	string update_book;
-	Books(string book_title, string book_author, string remove_book, string book_pages, int number_of_books, string book_genre, string add_book, string update_book) : book_title(book_title), book_author(book_author), remove_book(remove_book), book_pages(book_pages), number_of_books(number_of_books), book_genre(book_genre), add_book(add_book), update_book(update_book) {
+	int book_pages;
+	int number_of_books;
+	int book_id;
+	Books(string book_title, string book_author, string book_genre, int book_pages, int number_of_books, int book_id) : book_title(book_title), book_author(book_author), book_genre(book_genre), book_pages(book_pages), number_of_books(number_of_books), book_id(book_id) {
 	}
 };
 int main() {
-	string book_title, book_author, remove_book, book_pages, book_genre, add_book;
-	int number_of_books;
+	string book_title, book_author, book_genre;
+	int book_pages, number_of_books, book_id;
 	cout << "Enter Book Title: ";
 	cin >> book_title;
 	cout << "Enter Book Author: ";
 	cin >> book_author;
-	cout << "Enter Remove Book: ";
-	cin >> remove_book;
+	cout << "Enter Book Genre: ";
+	cin >> book_genre;
 	cout << "Enter Book Pages: ";
 	cin >> book_pages;
 	cout << "Enter Number of Books: ";
 	cin >> number_of_books;
-	cout << "Enter Book Genre: ";
-	cin >> book_genre;
-	cout << "Enter Add Book: ";
-	cin >> add_book;
-	Books books(book_title, book_author, remove_book, book_pages, number_of_books, book_genre, add_book);
-	cout << "Book Title: " << books.book_title << endl;
-	cout << "Book Author: " << books.book_author << endl;
-	cout << "Remove Book: " << books.remove_book << endl;
-	cout << "Book Pages: " << books.book_pages << endl;
-	cout << "Number of Books: " << books.number_of_books << endl;
-	cout << "Book Genre: " << books.book_genre << endl;
+	cout << "Enter Book ID: ";
+	cin >> book_id;
+	Books book(book_title, book_author, book_genre, book_pages, number_of_books, book_id);
+	cout << "Book Title: " << book.book_title << endl;
+	cout << "Book Author: " << book.book_author << endl;
+	cout << "Book Genre: " << book.book_genre << endl;
+	cout << "Book Pages: " << book_pages << endl;
+	cout << "Number of Books: " << number_of_books << endl;
+	cout << "Book ID: " << book_id << endl;
 	return 0;
 }
 class Members {
