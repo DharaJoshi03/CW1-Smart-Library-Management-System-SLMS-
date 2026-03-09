@@ -41,3 +41,29 @@ int main()
 	cout << "Hello, " << userName << "! Welcome to the Library System." << endl;
 	return 0;
 }
+class User {
+private:
+	string user_registration;
+	string user_authentcation;
+public:
+	User(string user_registration, string user_authentcation) : user_registration(user_registration), user_authentcation(user_authentcation) {
+	}
+	string getUserRegistration() {
+		return user_registration;
+	}
+	string getUserAuthentication() {
+		return user_authentcation;
+	}
+
+};
+int main() {
+	string user_registration, user_authentcation;
+	cout << "Registration is completed: ";
+	cin >> user_registration;
+	cout << "Authentication is verified: ";
+	cin >> user_authentcation;
+	User user(user_registration, user_authentcation);
+	cout << "User Registration: " << user.getUserRegistration() << endl;
+	cout << "User Authentication: " << user.getUserAuthentication() << endl;
+	return 0;
+}
