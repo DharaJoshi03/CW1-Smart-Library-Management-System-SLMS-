@@ -31,6 +31,7 @@ public:
 };
 int main()
 {
+	int userName, password;
 	string userName, password;
 	cout << "Enter your username: ";
 	cin >> userName;
